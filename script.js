@@ -39,3 +39,14 @@ document.addEventListener('keydown', function(event) {
         playNote(blackKeys[pressBlackKeyboard])
     }
 })
+
+const instruction = document.querySelector('article')
+instruction.addEventListener('mouseenter', function() {
+    instruction.style.opacity = '1'
+    instruction.style.fontSize = '20px'
+})
+
+instruction.addEventListener('mouseleave',function() {
+    instruction.style.opacity = '0.5'
+    instruction.style.fontSize = '15px'
+})
